@@ -57,6 +57,10 @@ footer {
   margin: 0;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 .gap-0 {
   gap: 0;
 }
@@ -93,6 +97,10 @@ footer {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .gap-1 {
@@ -133,6 +141,10 @@ footer {
   margin: 0.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -169,6 +181,10 @@ footer {
 
 .m-3 {
   margin: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
 }
 
 .gap-3 {
@@ -209,6 +225,10 @@ footer {
   margin: 1.5rem;
 }
 
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
 .gap-4 {
   gap: 1.5rem;
 }
@@ -245,6 +265,10 @@ footer {
 
 .m-5 {
   margin: 3rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
 }
 
 .gap-5 {
@@ -308,11 +332,11 @@ footer {
 }
 
 .text-warning {
-  color: #ffc107;
+  color: #946F00;
 }
 
 .bg-warning {
-  background-color: #ffc107;
+  background-color: #946F00;
 }
 
 .text-danger {
@@ -404,6 +428,14 @@ footer {
   font-style: italic;
 }
 
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -418,12 +450,90 @@ footer {
 .d-flex.flex-column {
   flex-direction: column;
 }
+.d-flex.justify-content-center {
+  justify-content: center;
+}
+.d-flex.align-items-center {
+  align-items: center;
+}
 
 .image-container {
   padding: 0 0.5rem;
 }
 .image-container .image-caption {
-  color: #ced4da;
+  color: #6c757d;
   text-align: right;
   margin: 0.25rem 0;
+}
+
+.AuthorBioContainer {
+  display: grid;
+  gap: 5px;
+  align-items: center;
+  grid-template-areas: "avatar name" "avatar school" "bio bio";
+}
+.AuthorBioContainer .avatar-container {
+  grid-area: avatar;
+}
+.AuthorBioContainer .avatar-container .avatar {
+  background-image: url("../Images/avatar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  text-align: center;
+  padding: 25px;
+  max-width: 75px;
+  box-sizing: border-box;
+}
+.AuthorBioContainer .name {
+  grid-area: name;
+}
+.AuthorBioContainer .school {
+  grid-area: school;
+}
+.AuthorBioContainer .bio {
+  grid-area: bio;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-container .btn {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.social-container .btn.btn-facebook {
+  background-image: url("../Images/facebook.svg");
+}
+.social-container .btn.btn-twitter {
+  background-image: url("../Images/twitter.svg");
+}
+.social-container .btn.btn-linkedin {
+  background-image: url("../Images/linkedin.svg");
+}
+
+.subscribe-form {
+  background-color: #e9ecef;
+}
+.subscribe-form .form .form-label {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.subscribe-form .form .form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+.subscribe-form .form .form-input:focus, .subscribe-form .form .form-input:focus-visible, .subscribe-form .form .form-input:active {
+  border: 1px solid #0d6efd;
 }

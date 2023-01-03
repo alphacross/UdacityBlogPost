@@ -27,11 +27,17 @@
   gap: 1rem;
 }
 
+.vw-100 {
+  width: 100vw;
+}
+
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
   }
-  .small-article-container, .main-article-container, .blog-post-container {
+  .small-article-container,
+.main-article-container,
+.blog-post-container {
     grid-template-columns: 1fr;
   }
 }
@@ -50,6 +56,9 @@
   .small-article-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .vw-100.vw-md-50 {
+    width: 50vw;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .container {
@@ -58,14 +67,23 @@
   .small-article-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .vw-100.vw-md-50 {
+    width: 50vw;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .container {
     max-width: 1140px;
   }
+  .vw-100.vw-md-50 {
+    width: 50vw;
+  }
 }
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+  .vw-100.vw-md-50 {
+    width: 50vw;
   }
 }

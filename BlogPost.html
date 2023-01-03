@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Content/site.css">
+    <title>Blog Post</title>
 </head>
 
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <a href="#" class="text-secondary">Subscribe</a>
         <div class="fs-1 text-center fw-bold">
-            Udacity Blog
+            <a href="Index.html" class="text-dark text-decoration-none">Udacity Blog</a>
         </div>
-    </div>
-    <div class="container pt-2">
+        <div class="text-end w-100 text-end">
+            <a class="search-button" href='#' aria-label="search button"></a>
+        </div>
+    </nav>
+    <main class="container pt-2">
         <div class="blog-post-container">
             <div class="blog-post">
                 <h1>Sample blog post</h1>
-                <p class="text-muted">December 12, 2022 by <a href="#">Mark</a></p>
+                <p class="text-dark">December 12, 2022 by <a href="#">Mark</a></p>
                 <div class="blog-post-body">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur massa sit amet mauris
@@ -25,7 +29,7 @@
                         tristique
                         faucibus. Curabitur sit amet nisl ut est dignissim aliquet non et ipsum. Nulla id bibendum urna.
                         Curabitur rutrum ullamcorper tellus vel molestie. Duis id neque mollis, pharetra lectus quis,
-                        pulvinar dolor. Nam convallis rhoncus pellentesque.
+                        <span class="text-underline">pulvinar dolor</span>. Nam convallis rhoncus pellentesque.
                     </p>
                     <h2>Vivamus nibh ligula</h2>
                     <p>
@@ -119,7 +123,12 @@
                         eleifend vel.
                     </p>
                 </div>
-
+                <p class="fst-italic text-center">Share this news!</p>
+                <div class="social-container">
+                    <a class="btn btn-facebook" href="#"></a>
+                    <a class="btn btn-twitter" href="#"></a>
+                    <a class="btn btn-linkedin" href="#"></a>
+                </div>
                 <div class="button-container">
                     <button class="btn btn-outline-primary">Older Post</button>
                     <button class="btn btn-outline-secondary">Newer Post</button>
@@ -128,8 +137,15 @@
             <div class="d-flex flex-column gap-3">
                 <div class="bg-light p-3">
                     <p class="fst-italic fw-bold fs-5">About</p>
-                    <p>Sed ullamcorper, nunc ac malesuada ornare, ante odio feugiat sem, in porttitor ex ante sit amet
-                        massa. Praesent volutpat ex turpis</p>
+                    <div class="AuthorBioContainer">
+                        <div class="avatar-container">
+                            <div class="avatar">
+                            </div>
+                        </div>
+                        <div class="name">Mark Lorem</div>
+                        <div class="school">Lorem University</div>
+                        <div class="bio"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur massa sit amet mauris semper, sit amet pretium purus pretium.</small></div>
+                    </div>
                 </div>
                 <div class="bg-light p-3">
                     <p class="fst-italic fw-bold fs-5">Archives</p>
@@ -156,7 +172,7 @@
                     <p class="text-primary fw-bold">Social Stories</p>
                     <p class="article-title">Shopee Xpress Staff Seen Carelessly Throwing Packages From Van to
                         Shop-lot</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -173,7 +189,7 @@
                     <p class="text-primary fw-bold">Social Stories</p>
                     <p class="article-title">Shopee Xpress Staff Seen Carelessly Throwing Packages From Van to
                         Shop-lot</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -190,7 +206,7 @@
                     <p class="text-primary fw-bold">Social Stories</p>
                     <p class="article-title">Shopee Xpress Staff Seen Carelessly Throwing Packages From Van to
                         Shop-lot</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -203,7 +219,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer>
         <hr>
         Copyrights 2022

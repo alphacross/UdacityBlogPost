@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Content/site.css">
+    <link rel="stylesheet" href="Content/site.css">\
+    <title>Udacity Blog</title>
 </head>
 
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <a href="#" class="text-secondary">Subscribe</a>
         <div class="fs-1 text-center fw-bold">
-            Udacity Blog
+            <a href="Index.html" class="text-dark text-decoration-none">Udacity Blog</a>
         </div>
-    </div>
-    <div class="container pt-2">
+        <div class="text-end w-100 text-end">
+            <a class="search-button" href='#' aria-label="search button"></a>
+        </div>
+    </nav>
+    <main class="container pt-2">
         <div class="main-article-container">
             <div class="article main-article">
                 <div class="article-body">
                     <p class="text-primary fw-bold">Social Stories</p>
-                    <p class="article-title">Shopee Xpress Staff Seen Carelessly Throwing Packages From Van to Shop-lot
-                    </p>
-                    <small class="text-muted">11 Nov</small>
+                    <h1 class="article-title">Shopee Xpress Staff Seen Carelessly Throwing Packages From Van to Shop-lot
+                    </h1>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -43,7 +47,7 @@
                         <p class="text-primary fw-bold">Social Stories</p>
                         <p class="article-title">Shopee Xpress Staff Seen Carelessly Throwing Packages From Van to
                             Shop-lot</p>
-                        <small class="text-muted">11 Nov</small>
+                        <small class="text-dark">11 Nov</small>
                         <div class="image-container text-center">
                             <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                             <p class="image-caption">Image of throwing</p>
@@ -58,7 +62,7 @@
                         <p class="text-warning fw-bold">Events</p>
                         <p class="article-title">The Wolf Howls Again! The Big Bad Wolf Book Sale is Finally Back in KL
                             After a 2 Year Hiatus</p>
-                        <small class="text-muted">11 Nov</small>
+                        <small class="text-dark">11 Nov</small>
                         <div class="image-container text-center">
                             <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                             <p class="image-caption">Image of throwing</p>
@@ -78,7 +82,7 @@
                     <p class="text-warning fw-bold">Events</p>
                     <p class="article-title">The Wolf Howls Again! The Big Bad Wolf Book Sale is Finally Back in KL
                         After a 2 Year Hiatus</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -93,7 +97,7 @@
                     <p class="text-warning fw-bold">Events</p>
                     <p class="article-title">The Wolf Howls Again! The Big Bad Wolf Book Sale is Finally Back in KL
                         After a 2 Year Hiatus</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -108,7 +112,7 @@
                     <p class="text-warning fw-bold">Events</p>
                     <p class="article-title">The Wolf Howls Again! The Big Bad Wolf Book Sale is Finally Back in KL
                         After a 2 Year Hiatus</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -123,7 +127,7 @@
                     <p class="text-danger fw-bold">Annoucement</p>
                     <p class="article-title">No. 1 Smartphone in the Market?! iQOO 11 5G Breaks Numerous Records Just
                         One Week After Launch in Malaysia</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -140,7 +144,7 @@
                     <p class="text-warning fw-bold">Events</p>
                     <p class="article-title">The Wolf Howls Again! The Big Bad Wolf Book Sale is Finally Back in KL
                         After a 2 Year Hiatus</p>
-                    <small class="text-muted">11 Nov</small>
+                    <small class="text-dark">11 Nov</small>
                     <div class="image-container text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/600x300" alt="shopee-xpress-staff">
                         <p class="image-caption">Image of throwing</p>
@@ -152,7 +156,29 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="d-flex justify-content-center mt-3">
+            <div class="subscribe-form p-3 vw-100 vw-md-50" id="SubscribeForm">
+                <strong class="fs-1">Subcribe to our newsletter!</strong>
+                <div class="form">
+                    <div class="row mt-2">
+                        <p class="form-label">
+                            Name
+                        </p>
+                        <input class="form-input mt-2" id="Name" name="Name" placeholder="Name"/>
+                    </div>
+                    <div class="row mt-2">
+                        <p class="form-label">
+                            Email Address
+                        </p>
+                        <input class="form-input mt-2" id="Email" name="Email" placeholder="Email Address"/>
+                    </div>
+                    <div class="row text-end mt-2">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <hr>
         Copyrights 2022
