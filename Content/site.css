@@ -1,6 +1,7 @@
 @import 'navbar.css';
 @import 'responsive.css';
 @import 'button.css';
+
 body {
   margin: 0;
 }
@@ -300,67 +301,51 @@ footer {
 }
 
 .text-primary {
-  color: #0d6efd;
+  color: #3333ff;
 }
 
 .bg-primary {
-  background-color: #0d6efd;
+  background-color: #3333ff;
 }
 
 .text-secondary {
-  color: #6c757d;
+  color: #666666;
 }
 
 .bg-secondary {
-  background-color: #6c757d;
-}
-
-.text-success {
-  color: #198754;
-}
-
-.bg-success {
-  background-color: #198754;
-}
-
-.text-info {
-  color: #0dcaf0;
-}
-
-.bg-info {
-  background-color: #0dcaf0;
+  background-color: #666666;
 }
 
 .text-warning {
-  color: #946F00;
+  color: #7A7A00;
 }
 
 .bg-warning {
-  background-color: #946F00;
+  background-color: #7A7A00;
 }
 
 .text-danger {
-  color: #dc3545;
+  color: #EB0000;
 }
 
 .bg-danger {
-  background-color: #dc3545;
+  background-color: #EB0000;
 }
 
 .text-light {
-  color: #f8f9fa;
+  color: #e6e6e6;
 }
 
 .bg-light {
-  background-color: #f8f9fa;
+  background-color: #e6e6e6;
 }
 
 .text-dark {
-  color: #212529;
+  color: #1a1a1a;
 }
 
 .bg-dark {
-  background-color: #212529;
+  background-color: #1a1a1a;
 }
 
 .text-white {
@@ -391,17 +376,21 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
 }
+
 .article .article-body {
   padding: 0.5rem;
 }
+
 .article .article-body .article-title {
   font-weight: 700;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+
 .article .article-body .article-summary {
   margin-bottom: 3rem;
 }
+
 .article.main-article .article-body .article-title {
   font-size: 1.75rem;
   font-weight: 700;
@@ -413,7 +402,7 @@ footer {
 }
 
 .text-muted {
-  color: #ced4da;
+  color: #999999;
 }
 
 .text-start {
@@ -447,12 +436,15 @@ footer {
 .d-flex {
   display: flex;
 }
+
 .d-flex.flex-column {
   flex-direction: column;
 }
+
 .d-flex.justify-content-center {
   justify-content: center;
 }
+
 .d-flex.align-items-center {
   align-items: center;
 }
@@ -460,8 +452,9 @@ footer {
 .image-container {
   padding: 0 0.5rem;
 }
+
 .image-container .image-caption {
-  color: #6c757d;
+  color: #666666;
   text-align: right;
   margin: 0.25rem 0;
 }
@@ -472,27 +465,32 @@ footer {
   align-items: center;
   grid-template-areas: "avatar name" "avatar school" "bio bio";
 }
+
 .AuthorBioContainer .avatar-container {
   grid-area: avatar;
 }
+
 .AuthorBioContainer .avatar-container .avatar {
   background-image: url("../Images/avatar.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  border: 1px solid #ced4da;
+  border: 1px solid #999999;
   text-align: center;
   padding: 25px;
   max-width: 75px;
   box-sizing: border-box;
 }
+
 .AuthorBioContainer .name {
   grid-area: name;
 }
+
 .AuthorBioContainer .school {
   grid-area: school;
 }
+
 .AuthorBioContainer .bio {
   grid-area: bio;
 }
@@ -502,6 +500,7 @@ footer {
   justify-content: center;
   gap: 15px;
 }
+
 .social-container .btn {
   width: 50px;
   height: 50px;
@@ -509,31 +508,39 @@ footer {
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
+
 .social-container .btn.btn-facebook {
   background-image: url("../Images/facebook.svg");
 }
+
 .social-container .btn.btn-twitter {
   background-image: url("../Images/twitter.svg");
 }
+
 .social-container .btn.btn-linkedin {
   background-image: url("../Images/linkedin.svg");
 }
 
 .subscribe-form {
-  background-color: #e9ecef;
+  background-color: #cccccc;
 }
+
 .subscribe-form .form .form-label {
   margin: 0;
   font-size: 0.9rem;
 }
+
 .subscribe-form .form .form-input {
   box-sizing: border-box;
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: 0.375rem;
-  border: 1px solid #ced4da;
+  border: 1px solid #999999;
   outline: none;
 }
-.subscribe-form .form .form-input:focus, .subscribe-form .form .form-input:focus-visible, .subscribe-form .form .form-input:active {
-  border: 1px solid #0d6efd;
+
+.subscribe-form .form .form-input:focus,
+.subscribe-form .form .form-input:focus-visible,
+.subscribe-form .form .form-input:active {
+  border: 1px solid #3333ff;
 }

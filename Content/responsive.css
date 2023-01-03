@@ -9,6 +9,7 @@
   justify-content: space-around;
   gap: 1rem;
 }
+
 .main-article-container .sub-article {
   display: flex;
   flex-direction: column;
@@ -35,54 +36,67 @@
   .container {
     max-width: 100%;
   }
+
   .small-article-container,
-.main-article-container,
-.blog-post-container {
+  .main-article-container,
+  .blog-post-container {
     grid-template-columns: 1fr;
   }
 }
+
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
     max-width: 540px;
   }
+
   .small-article-container {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     max-width: 720px;
   }
+
   .small-article-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .vw-100.vw-md-50 {
     width: 50vw;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
+
   .small-article-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .vw-100.vw-md-50 {
     width: 50vw;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .container {
     max-width: 1140px;
   }
+
   .vw-100.vw-md-50 {
     width: 50vw;
   }
 }
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
+
   .vw-100.vw-md-50 {
     width: 50vw;
   }
